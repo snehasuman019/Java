@@ -45,8 +45,38 @@ public class Polymorphi {
 }
 */
 
+/*without using @override function.
 
+ */
+class A {
+    // Parent method using an int
+    void fun1(int age) {
+        System.out.println("Age from Class A: " + age);
+    }
+}
 
+class B extends A {
+    // Overriding the parent method using a float
+    // Note: To override, the parameters must match exactly.
+    // Here we use fun1(int) to maintain the override, then use a float inside.
+    void fun1(int age) {
+        float height = 5.8f; 
+        System.out.println("Height from Class B: " + height);
+        System.out.println("Hello (from Class B)");
+        super.fun1(age); 
+    }
+}
+
+public class Polymorphi { 
+    public static void main(String[] args) {
+        B b = new B();
+        
+        // Passing an int (25) to the method
+        b.fun1(25);
+    }
+}
+
+/* 
 class Calculator {
     // Method for integer addition
     void add(int a, int b) {
@@ -69,3 +99,4 @@ public class Polymorphi {
         calc.add(10.5f, 20.3f);    // Calls the float version (note the 'f' suffix)
     }
 }
+    */
