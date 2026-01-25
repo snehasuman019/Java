@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Patterns {
     public static void main(String[] args){
-        // Pattern 1
+/*         // Pattern 1
         // *
         // * *
         // * * *
@@ -125,6 +125,7 @@ for(int i=1;i<=5;i++){
     }
     System.out.println();
 }
+
 // Pattern 6
 // butterfly pattern
 //*   *
@@ -158,13 +159,72 @@ for(int i=q-1;i>=1;i--){
         System.out.print("*");
     }
     System.out.println();
-}
+}*/
+/* 
+int n = 3; // Number of rows for the upper half
+
+        // Upper Half
+        for (int i = 1; i <= n; i++) {
+            // Stars on left
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            // Spaces in middle
+            int spaces = 2 * (n - i);
+            for (int j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
+            // Stars on right
+            for (int j = 1; j <= i; j++) {
+                // If it's the middle row (max stars), avoid double printing
+                if (spaces == 0 && j == n) continue; 
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Lower Half
+        for (int i = n - 1; i >= 1; i--) {
+            // Stars on left
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            // Spaces in middle
+            int spaces = 2 * (n - i);
+            for (int j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
+            // Stars on right
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
        
     }
-}
+*/
 // Pattern 7
 //*****
 //*   *
 //*   *
 //*   *
 //*****
+int n = 5; // Size of the square
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                // Logic: Print '*' if it's the first or last row, 
+                // OR the first or last column.
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("*");
+                } else {
+                    // Otherwise, print a space
+                    System.out.print(" ");
+                }
+            }
+            // Move to the next line after each row
+            System.out.println();
+        }
+    }
+}
