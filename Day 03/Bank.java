@@ -1,3 +1,4 @@
+// Encapsulation
 class Account{
     private int accno;
     private int balance;
@@ -17,3 +18,4 @@ public class Bank {
         System.out.println("Current Balance: "+amt);
     }
 }
+// create a student validation program in which marks must be between 0-100 considering encapsulation in mind.
