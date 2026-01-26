@@ -31,6 +31,8 @@ public class arr{
      }
 }
      */
+
+/* /
 //array object 
 class Student{
     public int roll_no;
@@ -53,5 +55,37 @@ public class arr{
             System.out.println("Element at index " + i + " : " + arr[i].roll_no + " " + arr[i].name);
 
         }
+    }
+}
+// What happens if we try to access elements outside the array size?
+// JVM throws ArrayIndexOutOfBoundsException to indicate that the array has been accessed with an illegal index. The index is either negative or greater than or equal to the size of an array.
+
+public class arr {
+    public static void main(String[] args)
+    {
+        int[] arr = new int[4];
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+
+        System.out.println(
+            "Trying to access element outside the size of array");
+        System.out.println(arr[5]);
+    }
+}
+    */
+
+// Passing arrays to methods
+public class arr{
+    public static void main(String[] args){
+        int arr[] = {10,20,30,40,50};
+        sum(arr);
+    }
+    public static void sum(int[] arr){
+        int sum =0;
+        for(int i=0;i<arr.length;i++)
+            sum += arr[i];
+        System.out.println("The sum is: " + sum);
     }
 }
