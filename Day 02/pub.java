@@ -30,3 +30,7 @@ public class pub{
 
     }
 }
+// add() is globally accessible due to the public modifier.
+// If we try to access the Car class from a different package, it will be accessible without any issues.
+// Similarly, the add method in MathUtils class can be accessed from any other class or package without restrictions.
+// Hence, public members are accessible from any other class or package.

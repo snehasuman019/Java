@@ -1,3 +1,6 @@
+//write a program to add two numbers but dont use the arithmetic operators.
+
+
 public class fun {
     public static void main(String[] args){
         int a = 5;

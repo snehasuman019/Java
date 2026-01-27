@@ -19,3 +19,5 @@ public class proc {
         System.out.println(v.speed);
     }
 }
+// speed is accessible via subclass methods and other classes in the same package, but direct access from a different package (non-subclass) would fail.
+//it willl cause compilation error if we try to access speed directly from an instance of Vehicle in a different package.
