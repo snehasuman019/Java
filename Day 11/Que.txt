@@ -1,0 +1,3 @@
+Queue using basics
+2. Reverse first k elements in a queue.
+3. Implement stack using 2 simple queue.
