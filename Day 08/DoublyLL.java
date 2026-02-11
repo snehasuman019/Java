@@ -195,7 +195,7 @@ public class DoublyLL {
 
         if (head.data == key)
             return deleteElementAtHead(head);
-
+    
         Node temp = head;
 
         while (temp != null && temp.data != key)

@@ -62,7 +62,7 @@ class LinkedList {
 
 public class Main {
     public static void main(String[] args) {
-        cycleLL list = new cycleLL();
+        LinkedList list = new LinkedList();
 
         list.insert(10);
         list.insert(20);

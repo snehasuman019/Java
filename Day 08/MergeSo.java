@@ -27,7 +27,30 @@ public class MergeSo {
             mid.next = null;
             mergeSo(head);
             mergeSo(right);
+            merge(head, right);
         }
+        static Node merge(Node l1,Node l2){
+            Node 13 = new Node(-1);
+            Node temp =13;
+            while(l1!= null && l2 != null){
+                if(l1.data <=l2.data){
+                    temp.next = new Node(l1.data);
+                    l1=l1.next;
+                }else{
+                    temp.next = new Node(l2.data);
+                    l2 = l2.next;
+                }
+                while(l1!= null){
+                    temp.next = new Node(l2.data);
+
+                }
+            }
+            static Node addElement(Node head, int d){
+                Node newNode = new Node(d);
+                
+            }
+        }
+
     public static void main(String[] args) {
         
     }

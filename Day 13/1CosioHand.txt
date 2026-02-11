@@ -1,0 +1,33 @@
+Collision handling
+ -Seperate chaining
+    0| 5                           Node[] arr = new Node[5];   for creating this hash table
+    1|
+    2| 7 -> 2 -> 12
+    3| 3 -> 8
+    4|
+ -Open adderessing
+    -Linear Probing :-
+       % -> used for range              dec -> Integer[] arr = new Integer[5]
+        22 is my  no to stores
+        22 % 5 =2   2nd index is not empty so
+        (2+1) % 5 = 3        so we will keep it in 3rd index.
+        0 1 2 3  4
+        - - - 22 null
+        
+        in this case space is limited 
+        Linear probing only checks the next slot sequentially. If many consecutive slots are full, it doesn’t spread out entries well compared to quadratic probing or double hashing.
+
+    -Quadratic Probing :-
+        instead of single jump it does sequential jumping.
+        6 % 5 =1
+        (1 + 1^2) % 5 = 2
+        (1 + 2^2) % 5 = 3
+
+    -Double Hashing :-
+        do hasing again for the already generated hash code.
+
+* HashCode() - function to generate hash code in java (always in integer) by the jvm and is unpredictable.
+               depends on diff jvm versions as well.
+               java.lang.object -> generates hashcode (head of all classes)
+               ex -> (927679344) % 5 = 4
+         

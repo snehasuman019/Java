@@ -19,3 +19,27 @@ public class ExpenseTracker {
     
     
 }
+
+
+
+/*303
+
+class NumArray {
+
+    private int[] prefix;
+
+    public NumArray(int[] nums) {
+        int n = nums.length;
+        prefix = new int[n];
+
+        prefix[0] = nums[0];
+        for (int i = 1; i < n; i++) {
+            prefix[i] = prefix[i - 1] + nums[i];
+        }
+    }
+
+    public int sumRange(int left, int right) {
+        return prefix[right] - (left > 0 ? prefix[left - 1] : 0);
+    }
+}
+*/

@@ -210,6 +210,8 @@ int n = 3; // Number of rows for the upper half
 //*   *
 //*   *
 //*****
+
+/*/
 int n = 5; // Size of the square
 
         for (int i = 1; i <= n; i++) {
@@ -224,6 +226,27 @@ int n = 5; // Size of the square
                 }
             }
             // Move to the next line after each row
+            System.out.println();
+        }
+    }
+}
+
+*/
+
+        int rows = 4; // height of the triangle
+        for (int i = 1; i <= rows; i++) {
+            // Print leading spaces
+            for (int j = i; j < rows; j++) {
+                System.out.print(" ");
+            }
+            // Print stars and spaces inside
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                if (j == 1 || j == (2 * i - 1) || i == rows) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
             System.out.println();
         }
     }

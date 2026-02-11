@@ -1,0 +1,20 @@
+1.find the length of a subarray whose sum is zero.
+
+
+2. check wether the linked list is palindrome or not . 
+
+03-2
+find duplicates.
+3. rotate a linked list .
+4. you are given with the linked list that is unsorted in nature. wap to solve it .
+
+5. reverse the nodes in k k groups . #leetcode 25
+
+
+04-02
+//Reverse your entire doubly linked list.
+4.2//find pairs of a given sum in a sorted doubly LL.
+arr = [10,20,30,40,50]         target sum = 50
+4_3. Rotation of n nodes in doubly ll.
+Delete all occurences of a key in a given doubly LL 
+leetcode 146

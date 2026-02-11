@@ -1,0 +1,15 @@
+ 1. Binary search on answer problem. If the answer is numeric answer the and the feasibility changes monotonically true to false or false to true , we can binalry search on it. 
+ Types of pharases:-
+   - Minimum possible
+   - maximum possible- atleast
+   - atmost
+   - capacity
+   - limited
+   - can we do in x ?
+
+
+2. You are given books in a row , each books have some papges you must distribute themm among m students, each   
+   student gets continuous books. 
+   every student must get atleast one book. you have to minimize the maximum pages assigned to any student
+   Input: arr[] = [12, 34, 67, 90], k = 2
+   Output: 113

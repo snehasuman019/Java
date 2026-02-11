@@ -1,3 +1,9 @@
 Queue using basics
 2. Reverse first k elements in a queue.
 3. Implement stack using 2 simple queue.
+
+4. this queue represents the number of tickets required by a person, the second person needs 2 tickets. find number required to find the 3 tickets by k person . one person can buy one ticket at one time.
+  arr[2,3,2] k=2               (leetcode - 2073)
+
+5. You are given a list of cpu task represeented by  capital letters . between 2 same task there must be n unit of cooling time . we have to return minimum time in order to                ( )
+ task = [A,A,A,B,B,B]      n=2 between two same task

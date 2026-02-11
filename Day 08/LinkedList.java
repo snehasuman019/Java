@@ -30,9 +30,7 @@ public class LinkedList {
 */
 
 
-
-
-
+/* /
 public class LinkedList {
     class Node{
         int data;
@@ -57,19 +55,83 @@ public class LinkedList {
         return head;
     }
     public static void main(String[] args){
-        // LinkedList lst = new LinkedList();
-         Node head = null;
-        head = addElementatEnd(head, 10);
-        head = addElementatEnd(head, 20);
-        head = addElementatEnd(head, 30);
+        LinkedList lst = new LinkedList();
 
-        Node temp = head;
-        while(temp != null){
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
     } 
 }
+*/
+
+
+public class LinkedList {
+    static class Node{
+        int data;
+        Node next;
+
+        Node(int d){ // constructor to initialize members
+            this.data = d;
+            this.next = null;
+        }
+    }
+    static Node addElementFront(Node head, int d){
+        Node newNode = new Node(d); // creating new node 
+        if(head == null){
+            head = newNode;
+            return head;
+        }
+        newNode.next = head;
+        head = newNode;
+        return head;
+    }
+    static Node addElementEnd(Node head, int d){
+        Node newNode = new Node(d);
+        if(head == null){
+            head = newNode;
+            return head;
+        }
+        Node temp = head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        temp.next = newNode;
+        return head;
+    }
+    static Node addElementPos(Node head, int d, int pos){
+        if(pos == 1){
+            return addElementFront(head, d);
+        }
+        int idx = 1;
+        Node temp = head;
+        while(temp != null && idx != pos-1){
+            temp = temp.next;
+            idx++;
+        }
+        if(temp != null){
+            Node newNode = new Node(d);
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
+        return head;
+    }
+    static Node addElementPos(){}
+    public static void main(String[] args){
+        LinkedList1 lst = new LinkedList1();
+
+
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
